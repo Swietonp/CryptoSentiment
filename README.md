@@ -64,3 +64,27 @@ With these steps completed, your project should be set up and ready for executio
 
 <img src="resources/sample_results.PNG" alt="alt text" title="Sample results" width="700" height="400">
 
+## Further Potential Project Development
+
+As for further project development, there are several possibilities to consider:
+
+1. **Deployment on Google App Engine**:
+   - Consider migrating the Flask application to Google App Engine, which allows for scalability and automated infrastructure management.
+
+2. **Database Expansion**:
+   - To enable more in-depth data analysis, you can extend the project's architecture with a database such as Google Cloud SQL.
+   - A database will enable the persistent storage and analysis of collected data, as well as access to more advanced data processing capabilities.
+
+3. **Integration with Additional Data Sources**:
+   - Consider adding the ability to gather data from other sources, such as social media platforms, discussion forums, or other cryptocurrency information sources.
+
+4. **Automated Data Visualization**:
+   - Create tools for automated data visualization to provide users with more advanced and interactive reports.
+
+5. **Monitoring and Notifications**:
+   - Add monitoring and notification features to inform users about significant sentiment changes or new cryptocurrency-related information.
+
+6. **Extension of Cryptocurrency Support**:
+   - If the project focuses on specific cryptocurrencies, consider adding support for various cryptocurrencies and tokens.
+
+These opportunities expand the project and allow for the delivery of more advanced features and data analysis related to cryptocurrencies.
