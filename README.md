@@ -59,3 +59,8 @@ The primary objectives of this project are as follows:
      - `python main.py`
 
 With these steps completed, your project should be set up and ready for execution. Ensure that you've followed each step carefully to ensure the proper functioning of the application.
+
+## Sample results
+
+<img src="resources/sample_results.png" alt="alt text" title="Sample results" width="720" height="700">
+
