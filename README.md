@@ -24,3 +24,38 @@ The primary objectives of this project are as follows:
 ## Project Architecture
 
 <img src="resources/architecture.png" alt="alt text" title="Architecture" width="720" height="700">
+
+## Project Preparation Steps
+
+1. **Create a Google Cloud Project**:
+   - Start by creating a new project in Google Cloud if you haven't already.
+
+2. **Update Project Names**:
+   - In the project files, update the project name in the following locations:
+     - `/cloud_functions/scraper/main.py` (Line 7)
+     - `/app/main.py` (Line 12)
+     - `main.tf` (Line 4)
+   - Optionally, you can also modify the region in `main.tf` (Line 5) if needed.
+
+3. **Create Service Account**:
+   - In your Google Cloud project, create a service account and generate credentials.
+   - Save the credentials as `credentials.json` and place them in your project directory.
+
+4. **Compress Cloud Function Files**:
+   - Compress all files in the `/cloud_functions/scraper` directory into a zip file named `scraper.zip`.
+
+5. **Provision Cloud Infrastructure**:
+   - From the project directory, execute the following commands to create the cloud infrastructure using Terraform:
+     1. `terraform init`
+     2. `terraform plan`
+     3. `terraform apply`
+
+6. **Install Python Dependencies**:
+   - After creating the infrastructure, navigate to the `/app` directory and execute the following command to install Python dependencies:
+     - `pip install -r requirements.txt`
+
+7. **Run Flask Application**:
+   - To start the Flask application, run the following command from the `/app` directory:
+     - `python main.py`
+
+With these steps completed, your project should be set up and ready for execution. Ensure that you've followed each step carefully to ensure the proper functioning of the application.
