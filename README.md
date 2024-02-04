@@ -62,5 +62,5 @@ With these steps completed, your project should be set up and ready for executio
 
 ## Sample results
 
-<img src="resources/sample_results.png" alt="alt text" title="Sample results" width="720" height="700">
+<img src="resources/sample_results.PNG" alt="alt text" title="Sample results" width="720" height="700">
 
