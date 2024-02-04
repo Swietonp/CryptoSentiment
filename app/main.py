@@ -9,7 +9,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '././credentials.json'
 
 client = language_v1.LanguageServiceClient()
 
-project_id = "cryptosentiment-413216"
+project_id = "your_project_id"
 subscription_name = "crypto-news-pull-subscription"
 subscriber = pubsub_v1.SubscriberClient()
 subscription_path = subscriber.subscription_path(project_id, subscription_name)
