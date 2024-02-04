@@ -34,4 +34,3 @@ def publish_crypto_news(event, context):
         })
         message_bytes = message_json.encode("utf-8")
         publisher.publish(topic_path, data=message_bytes)
-        print(f"Published message: {title}")
