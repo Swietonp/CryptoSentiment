@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 
-project_id = "cryptosentiment-413216" # Replace with your project id
+project_id = "your_project_id"
 topic_id = "crypto-news-topic"
 
 publisher = pubsub_v1.PublisherClient()
