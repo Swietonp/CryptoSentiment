@@ -1,13 +1,23 @@
+# Authentication
 provider "google" {
   credentials = file("credentials.json")
-  project     = "cryptosentiment-413216"
+  project     = "your_project_id"
   region      = "europe-west1"
 }
 
+# Pub/Sub Topic
 resource "google_pubsub_topic" "crypto_news_topic" {
   name = "crypto-news-topic"
 }
 
+# Pub/Sub Subscription
+resource "google_pubsub_subscription" "crypto_news_pull_subscription" {
+  name                = "crypto-news-pull-subscription"
+  topic               = google_pubsub_topic.crypto_news_topic.name
+  ack_deadline_seconds = 0
+}
+
+# Scheduler
 resource "google_cloud_scheduler_job" "crypto_news_scheduler" {
   name     = "crypto-news-scheduler-every-minute"
   schedule = "*/1 * * * *"
@@ -33,6 +43,7 @@ resource "google_storage_bucket_object" "function_source_object" {
   source = "./cloud_functions/scraper/scraper.zip"
 }
 
+# Cloud function with scrapper
 resource "google_cloudfunctions_function" "crypto_news" {
   name                  = "crypto-news-function"
   description           = "Function for publish Crypto Data"
