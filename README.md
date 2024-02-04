@@ -23,3 +23,4 @@ The primary objectives of this project are as follows:
 
 ## Project Architecture
 
+<img src="resources/architecture.png" alt="alt text" title="Architecture" width="100" height="100">
