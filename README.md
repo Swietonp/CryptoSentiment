@@ -38,10 +38,10 @@ The primary objectives of this project are as follows:
    - Optionally, you can also modify the region in `main.tf` (Line 5) if needed.
   
 3. **Enable Google Cloud API**:
-   1. Cloud Build API
-   2. Cloud Functions API
-   3. Cloud Scheduler API
-   4. Cloud Natural Language API
+   - Cloud Build API
+   - Cloud Functions API
+   - Cloud Scheduler API
+   - Cloud Natural Language API
 
 4. **Create Service Account**:
    - In your Google Cloud project, create a service account and generate credentials.
